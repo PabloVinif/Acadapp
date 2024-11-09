@@ -1,0 +1,28 @@
+{
+  "alunos": [
+    {
+      "id": "1",
+      "nome": "João Silva",
+      "ativo": true,
+      "plano": "Mensal"
+    },
+    {
+      "id": "2",
+      "nome": "Maria Oliveira",
+      "ativo": false,
+      "plano": "Anual"
+    },
+    {
+      "id": "3",
+      "nome": "Carlos Pereira",
+      "ativo": true,
+      "plano": "Semanal"
+    },
+    {
+      "id": null,
+      "nome": "pablo",
+      "ativo": true,
+      "plano": "Mensal"
+    }
+  ]
+}
