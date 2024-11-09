@@ -26,7 +26,7 @@ class _AlunosListPageState extends State<AlunosListPage> {
         alunos = fetchedAlunos;
       });
     } catch (e) {
-      // Trate erros se necessário
+     
     }
   }
 
@@ -99,16 +99,15 @@ class _AlunosListPageState extends State<AlunosListPage> {
 
   void _adicionarAluno(Aluno aluno) async {
     await _alunoService.addAluno(aluno);
-    _loadAlunos();  // Recarrega a lista de alunos
+    _loadAlunos();  
   }
 
   void _editarAluno(int index, Aluno alunoEditado) async {
     await _alunoService.updateAluno(alunos[index].id!, alunoEditado);
-    _loadAlunos();  // Recarrega a lista de alunos
-  }
+    _loadAlunos(); 
 
   void _removerAluno(int index) async {
     await _alunoService.deleteAluno(alunos[index].id!);
-    _loadAlunos();  // Recarrega a lista de alunos
+    _loadAlunos();  
   }
 }
