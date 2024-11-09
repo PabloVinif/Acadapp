@@ -6,20 +6,18 @@ class Aluno {
 
   Aluno({this.id, required this.nome, required this.ativo, required this.plano});
 
-  // Método para criar um objeto Aluno a partir de um JSON
   factory Aluno.fromJson(Map<String, dynamic> json) {
     return Aluno(
-      id: json['id'], // O id vem do JSON do json-server
+      id: json['id'], 
       nome: json['nome'],
       ativo: json['ativo'],
       plano: json['plano'],
     );
   }
 
-  // Método para converter um objeto Aluno para JSON
   Map<String, dynamic> toJson() {
     return {
-      'id': id, // O id é opcional, pois o json-server vai gerenciar
+      'id': id, 
       'nome': nome,
       'ativo': ativo,
       'plano': plano,
